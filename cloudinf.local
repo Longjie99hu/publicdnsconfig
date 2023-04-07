@@ -1,0 +1,23 @@
+$ORIGIN .
+$TTL 10800      ; 3 hours
+cloudinf.local          IN SOA  amazon.cloudinf.local. amazon.cloudinf.local. (
+                                2023032209 ; serial
+                                86400      ; refresh (1 day)
+                                3600       ; retry (1 hour)
+                                604800     ; expire (1 week)
+                                10800      ; minimum (3 hours)
+                                )
+                        NS      amazon.cloudinf.local.
+$ORIGIN cloudinf.local.
+amazon                  A       10.200.21.193
+                        A       50.16.96.193
+$TTL 300        ; 5 minutes
+bram                    A       7.7.7.8
+bryan                   A       5.7.7.7
+iets                    A       1.2.3.5
+jesse                   A       1.2.4.8
+piet                    A       9.9.9.9
+super                   A       1.2.3.4
+                        A       192.168.37.128
+                        A       192.168.37.129
+                        A       192.168.37.251
